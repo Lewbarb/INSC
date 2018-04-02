@@ -22,7 +22,7 @@ namespace CDProjektRED
 
         }
 
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        protected void TextBoxArtist_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -41,9 +41,9 @@ namespace CDProjektRED
         {
             int id = (int)(Session["ID"]);
 
-            string Album = TextBox2.Text;
-            string Artist = TextBox1.Text;
-            int Year = Int32.Parse(TextBox3.Text);
+            string Album = TextBoxAlbum.Text;
+            string Artist = TextBoxArtist.Text;
+            int Year = Int32.Parse(TextBoxYear.Text);
 
             dbchange.editRecord(id, Artist, Album, Year);
 
@@ -54,7 +54,6 @@ namespace CDProjektRED
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-
             int idSend = (int)(Session["ID"]);
             dbchange.deleteRecord(idSend);
             Response.Redirect("~/WebForm2.aspx");

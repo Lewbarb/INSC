@@ -31,31 +31,31 @@ namespace CDProjektRED {
         protected global::System.Web.UI.WebControls.Button btnEdit;
         
         /// <summary>
-        /// TextBox1 control.
+        /// TextBoxArtist control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxArtist;
         
         /// <summary>
-        /// TextBox2 control.
+        /// TextBoxAlbum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxAlbum;
         
         /// <summary>
-        /// TextBox3 control.
+        /// TextBoxYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxYear;
         
         /// <summary>
         /// RegularExpressionValidator1 control.

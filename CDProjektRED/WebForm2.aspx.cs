@@ -69,9 +69,9 @@ namespace CDProjektRED
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string ArtistSend = TextBox1.Text;
-            string AlbumSend = TextBox2.Text;
-            int YearSend = Int32.Parse(TextBox3.Text);
+            string ArtistSend = TextBoxArtist.Text;
+            string AlbumSend = TextBoxAlbum.Text;
+            int YearSend = Int32.Parse(TextBoxYear.Text);
             dbchange.addRecord(ArtistSend, AlbumSend, YearSend);
             popList();
         }

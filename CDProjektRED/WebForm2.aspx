@@ -15,11 +15,11 @@
     <br />
     <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
     <asp:Button ID="btnEdit" runat="server" Height="24px" OnClick="btnEdit_Click" Text="Edit Record" Width="157px" />
-    <asp:TextBox ID="TextBox1" runat="server" Width="111px"></asp:TextBox>
-    <asp:TextBox ID="TextBox2" runat="server" Width="83px"></asp:TextBox>
-    <asp:TextBox ID="TextBox3" runat="server" Width="113px"></asp:TextBox>
+    <asp:TextBox ID="TextBoxArtist" runat="server" Width="111px"></asp:TextBox>
+    <asp:TextBox ID="TextBoxAlbum" runat="server" Width="83px"></asp:TextBox>
+    <asp:TextBox ID="TextBoxYear" runat="server" Width="113px"></asp:TextBox>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
-         ControlToValidate="TextBox3" runat="server"
+         ControlToValidate="TextBoxYear" runat="server"
          ErrorMessage="Only Numbers allowed"
          ValidationExpression="\d+">
 </asp:RegularExpressionValidator>
