@@ -58,6 +58,10 @@ namespace CDProjektRED
             }
             catch (System.NullReferenceException)
             {
+                //window.alert("You didn't enter a valid value");
+                string message = "You didn't select anything";
+                ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('"+message+"');", true);
+
                 //create error popup
             }
 
