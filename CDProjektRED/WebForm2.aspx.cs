@@ -29,7 +29,7 @@ namespace CDProjektRED
 
         void popList()
         {
-            ListBox1.Items.Clear();
+            //ListBox1.Items.Clear();
             var myCdList = cdList().OrderBy(o => o.Artist);
 
             foreach (CDtbl c in myCdList)
@@ -44,12 +44,16 @@ namespace CDProjektRED
 
         }
 
-        protected void editButton_Click(object sender, EventArgs e)
+
+
+ 
+
+        protected void btnEdit_Click(object sender, EventArgs e)
         {
             try
             {
-                int id = Int32.Parse(ListBox1.SelectedItem.ToString().Split('\t')[0]);//splits the listbox string back up to get the ID
-                Session["ID"] = id;
+                int IDForSession = Int32.Parse(ListBox1.SelectedItem.ToString().Split('\t')[0]);//splits the listbox string back up to get the ID
+                Session["ID"] = IDForSession;
                 Response.Redirect("~/WebForm3.aspx");
             }
             catch (System.NullReferenceException)
@@ -61,14 +65,11 @@ namespace CDProjektRED
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string Artist = TextBox1.Text;
-            string Album = TextBox2.Text;
-            int Year = Int32.Parse(TextBox3.Text);
-
-            dbchange.addRecord(Artist, Album, Year);
+            string ArtistSend = TextBox1.Text;
+            string AlbumSend = TextBox2.Text;
+            int YearSend = Int32.Parse(TextBox3.Text);
+            dbchange.addRecord(ArtistSend, AlbumSend, YearSend);
+            popList();
         }
-
-
-        
     }
 }
