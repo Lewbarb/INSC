@@ -43,7 +43,7 @@ namespace CDProjektRED
                 }
             }
         }
-        public void deleteRecord(int ID)//deletes record based on id passed
+        public static void deleteRecord(int ID)//deletes record based on id passed
         {
             using (CDModel context = new CDModel())
             {
@@ -54,7 +54,7 @@ namespace CDProjektRED
                 context.SaveChanges();
             }
         }
-        public void addRecord(string Artist, string Album, int Year)
+        public static void addRecord(string Artist, string Album, int Year)
         {
             using (CDModel context = new CDModel())
             {
@@ -68,9 +68,6 @@ namespace CDProjektRED
 
                 context.CDtbls.Add(cd);
                 context.SaveChanges();
-
-
-
             }
         }
     }

@@ -13,5 +13,22 @@ namespace CDProjektRED
         {
 
         }
+
+        protected void submitButton_Click(object sender, EventArgs e)
+        {
+            string adminUser = "admin";
+            string adminPass = "123456";
+
+            if (UserName.Text == adminUser && Password.Text == adminPass)
+            {
+                Response.Redirect("~/WebForm2.aspx");
+            }
+            else
+            {
+                System.Web.UI.ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "AlertBox", "alert('Login Unsuccessful');", true);
+            }
+
+
+        }
     }
 }

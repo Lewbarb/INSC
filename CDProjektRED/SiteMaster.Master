@@ -31,7 +31,7 @@
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/WebForm1.aspx">Admin Login</a></li>
+                                <li><a runat="server" href="~/Index.aspx">Admin Login</a></li>
                             </ul>
                         </AnonymousTemplate>
                     </asp:LoginView>
